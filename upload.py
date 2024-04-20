@@ -5,6 +5,9 @@ import PyPDF2
 import re
 import json
 
+# The text is divided into chunks of atmost 1000 characters and each chunk is
+# written to a new line in the vault.txt file.
+
 # Function to convert PDF to text and append to vault.txt
 def convert_pdf_to_text():
     file_path = filedialog.askopenfilename(filetypes=[("PDF Files", "*.pdf")])

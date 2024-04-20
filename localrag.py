@@ -3,6 +3,11 @@ from sentence_transformers import SentenceTransformer, util
 import os
 from openai import OpenAI
 
+# Read each line from the vault.txt and compute the embeddings
+# Compare with and get relevant context from the vault based on user input
+# Pass this to the ollama model with user input and context
+# Embedding the text from vault takes time. should use vector db instead.
+
 # ANSI escape codes for colors
 PINK = '\033[95m'
 CYAN = '\033[96m'
